@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 50px;
+        }
+        h1 {
+            text-align: center;
+        }
+        #task-input {
+            padding: 20px;
+            width: calc(100% - 22px); /* Adjust for padding */
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: medium;
+        }
+        #task-input::placeholder {
+            color: #000000; /* Change this to your desired color */
+            opacity: 1; /* Adjusts the transparency of the placeholder */
+        }
+        #todo-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        #todo-list li {
+            background: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #todo-list li button {
+            background: #ff4d4d;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #todo-list li button:hover {
+            background: #ff1a1a;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>To-Do List</h1>
+    <input type="text" id="task-input" placeholder="Add a new task" />
+    <button id="add-task-btn">Add Task</button>
+
+    <ul id="todo-list"></ul>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
